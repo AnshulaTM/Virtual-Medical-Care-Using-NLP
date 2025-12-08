@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+.venv/
+venv/
+.envrc
+
+# Jupyter
+.ipynb_checkpoints
+
+# Data & models
+data/
+models/
+*.sqlite3
+*.db
+*.h5
+*.pt
+*.ckpt
+*.npz
+*.pkl
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
