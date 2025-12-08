@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Virtual Medical Chat</title></head>
+<body>
+  <h1>Virtual Medical Chat (Prototype)</h1>
+  <div>
+    <textarea id="user" rows="4" cols="60"></textarea><br/>
+    <button id="send">Send</button>
+  </div>
+  <div id="conv"></div>
+
+<script>
+document.getElementById('send').onclick = async () => {
+  const text = document.getElementById('user').value;
+  const resp = await fetch('/api/chat', {
+    method: 'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({text})
+  });
+  const j = await resp.json();
+  const conv = document.getElementById('conv');
+  conv.innerHTML += '<p><b>You:</b> '+text+'</p><p><b>Bot:</b> '+ j.reply +'</p>';
+};
+</script>
+</body>
+</html>
