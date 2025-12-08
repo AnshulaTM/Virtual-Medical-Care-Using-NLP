@@ -1,7 +1,4 @@
 # Virtual-Medical-Care-Using-NLP
-Leveraging NLP to build an interactive virtual medical chatbot that diagnoses patients and answers questions based on symptoms provided. 
-
-# Virtual-Medical-Care-Using-NLP
 
 A reference implementation of an **interactive virtual medical chatbot** that accepts speech/text input, performs symptom understanding and retrieval over medical content, and produces conversational responses. This repo demonstrates an engineering prototype — **not** a certified medical device.
 
