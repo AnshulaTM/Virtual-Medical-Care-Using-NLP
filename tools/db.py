@@ -6,7 +6,7 @@ try:
         host='localhost',
         port=5432,
         user='postgres',
-        password='pixel3105',
+        password='password',
         database='illness_db'
     )
 
