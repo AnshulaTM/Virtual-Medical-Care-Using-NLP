@@ -4,7 +4,7 @@ A reference implementation of an **interactive virtual medical chatbot** that ac
 
 ## Features
 - Speech <> text pipeline (transcription & optional TTS)
-- Semantic search with vector DB (FAISS) over symptom/illness documents
+- Semantic search with vector DB (FAISS) over symptom/illness database
 - Conversational logic using LangChain/OpenAI-style LLMs (adapter)
 - PostgreSQL-backed conversation history (patient linkage)
 - Basic web UI (FastAPI) + REST endpoints for chat
